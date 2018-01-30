@@ -1,0 +1,21 @@
+{
+    "name": "syneticnl/drupal-frontend-libraries",
+    "description": "Add Twig and other Libraries to use with Drupal and patternlab",
+    "keywords": ["pattern lab", "plugin", "drupal"],
+    "homepage": "https://github.com/syneticnl/drupal-frontend-libraries",
+    "license": "GPL-2.0+",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jeffrey Bertoen"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/synetic.nl/drupal-frontend-libraries/issues",
+        "source": "https://github.com/synetic.nl/drupal-frontend-libraries/releases"
+    },
+    "require": {
+        "php": ">=5.6",
+        "twig/twig": "~1.0"
+    }
+}
