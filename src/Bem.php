@@ -5,9 +5,9 @@ namespace synetic\DrupalFrontendTools;
 use Drupal\Core\Template\Attribute;
 
 /**
- * Class BemGenerator
+ * Class Bem
  *
- * @package Drupal\synetic_frontend
+ * @package synetic\DrupalFrontendTools
  */
 class Bem {
 

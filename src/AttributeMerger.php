@@ -5,19 +5,16 @@ namespace synetic\DrupalFrontendTools;
 use Drupal\Core\Template\Attribute;
 
 /**
- * Class BemGenerator
+ * Class AttributeMerger
  *
- * @package Drupal\synetic_frontend
+ * @package synetic\DrupalFrontendTools
  */
 class AttributeMerger {
 
   /**
-   * Generate an Attribute object with BEM classes.
+   * Merge Attribute() with additional array of attributes by key value pairs.
    *
-   * @param string $base_class
-   * @param array $modifiers
-   * @param string $blockname
-   * @param array $extra
+   * @param Drupal\Core\Template\Attribute $attributes
    *
    * @return \Drupal\Core\Template\Attribute
    */
