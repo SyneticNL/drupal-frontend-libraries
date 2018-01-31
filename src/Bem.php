@@ -1,6 +1,6 @@
 <?php
 
-namespace syneticnl\DrupalFrontendLibraries;
+namespace synetic\DrupalFrontendTools;
 
 use Drupal\Core\Template\Attribute;
 
@@ -9,7 +9,7 @@ use Drupal\Core\Template\Attribute;
  *
  * @package Drupal\synetic_frontend
  */
-class BemGenerator {
+class Bem {
 
   /**
    * Generate an Attribute object with BEM classes.
