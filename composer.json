@@ -3,7 +3,7 @@
     "description": "Add Libraries to use with Drupal and Patternlab",
     "keywords": ["pattern lab", "plugin", "drupal"],
     "homepage": "https://github.com/syneticnl/drupal-frontend-libraries",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0-or-later",
     "type": "library",
     "authors": [
         {
