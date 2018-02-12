@@ -3,6 +3,7 @@
 namespace synetic\DrupalFrontendTools;
 
 use Drupal\Core\Template\Attribute;
+use Drupal\Core\Template\AttributeArray;
 
 /**
  * Class AttributeMerger
@@ -18,10 +19,17 @@ class AttributeMerger {
    *
    * @return \Drupal\Core\Template\Attribute
    */
-  public function merge(Attribute $attributes, $additional_attributes = []) {
+  public function merge($attributes, $additional_attributes = []) {
+    if(!isset($attributes)) {
+      $attributes = new Attribute();
+    }
     foreach ($additional_attributes as $key => $value) {
       if (is_string($value)) {
         $value = [$value];
+      }
+      if(is_object($value) && $value instanceof AttributeArray) {
+        /** @var AttributeArray $value */
+        $value = $value->getIterator()->getArrayCopy();
       }
       if ($attributes->offsetExists($key)) {
         $existing_attribute = $attributes->offsetGet($key)->value();
